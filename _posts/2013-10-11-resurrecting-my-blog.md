@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Resurrecting my blog"
-date:   2013-06-02
+date:   2013-10-11
 categories: 
 ---
 
