@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MySql warnings are evil"
-date:   2013-10-14
+date:   2013-10-15
 categories: 
 ---
 
@@ -66,7 +66,7 @@ When you are at the prompt it is quiet hard to see that there is a warning compa
 
 Then to make matter worse: say that you want to update an already existing record and change this particular field with data not defined in the enum. You still won't receive any errors from MySql but it will happily wipe out the previous value that was stored and leave it empty. All that without telling anything to you. Now this is extremely bad, evil, please don't, never do that.
 
-I actually did some research and so far I haven't found a way to handle warnings properly in the application code. Some people recomend running a 'SHOW WARNINGS' statement after each query but I hardly consider that to be solution. I also tried to find out if there is some MySql configuration option that would turn any warning into a real error, but didn't find anything.
+I actually did some research and so far I haven't found a way to handle warnings properly in the application code. Some people recomend running a 'SHOW WARNINGS' statement after each query but I hardly consider that to be solution. I also tried to find out if there is some MySql configuration option that would turn any warning into a real error, but didn't find anything. There is a [question][how-to-deal-with-warning-pdo] related to this topic on StackOverflow but there seems to be no real answer yet to this particular question
 
 To conclude I really think that these warnings are a bad thing. They don't really help you, they corrupt your data and you cannot handle them properly in your application code.
 
