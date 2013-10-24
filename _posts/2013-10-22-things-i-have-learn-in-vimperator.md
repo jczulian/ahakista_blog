@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New things I have learn with Vimperator"
+title:  "New things I have learned with Vimperator"
 date:   2013-10-22
 categories: 
 ---
