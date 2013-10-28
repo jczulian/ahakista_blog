@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Weekly Review - 2013 Week 43 - 21 October to 27 October"
-date:   2013-10-18
+date:   2013-10-27
 categories: 
 year: '2013'
 month: '10'
