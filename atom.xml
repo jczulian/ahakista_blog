@@ -1,0 +1,26 @@
+---
+layout: nil
+site-url: http://www.ahakista.net
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+    <title>Jean-christophe Zulian - Ahakista</title>
+    <link href="{{ page.site-url }}/atom.xml" rel="self"/>
+    <link href="{{ page.site-url }}/"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>{{ page.site-url }}</id>
+    <author>
+        <name>Jean-christophe Zulian</name>
+        <email>jeanchristophe.zulian@fastmail.fm</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+     <title>{{ post.title }}</title>
+     <link href="{{ page.site-url }}{{ post.url }}"/>
+     <updated>{{ post.date | date_to_xmlschema }}</updated>
+     <id>{{ page.site-url }}{{ post.id }}</id>
+     <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
