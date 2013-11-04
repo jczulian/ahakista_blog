@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Php's preg_grep function has a strange behavior"
-date:   2013-11-03
+date:   2013-11-02
+tags: [php]
 categories: 
 ---
 
